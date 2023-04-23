@@ -9,15 +9,12 @@ import Horror from "./Horror";
 function App() {
   return (
     <div className="text-center app">
-      
       <Router>
         <Routes>
           <Route path="/" exact element={<Product />} />
           <Route path="/inspiration" element={<Inspiration />} />
           <Route path="/spin" element={<Spin />} />
           <Route path="/horror" element={<Horror />} />
-
-
         </Routes>
       </Router>
     </div>

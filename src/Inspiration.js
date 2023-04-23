@@ -2,11 +2,7 @@ import "./App.css";
 import React from "react";
 import { Component } from "react";
 import { Link } from "react-router-dom";
-import { Container, Form   } from "react-bootstrap";
-
-
-
-
+import { Container, Form } from "react-bootstrap";
 
 const { Configuration, OpenAIApi } = require("openai");
 
@@ -27,13 +23,15 @@ class Product extends Component {
     ///// OPENAI
 
     const configuration = new Configuration({
-      apiKey: "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",
+      apiKey: "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",
     });
     const openai = new OpenAIApi(configuration);
     openai
       .createCompletion({
         model: "text-davinci-002",
-        prompt: "write a hilarious inspiration one-liner related to: " + formDataObj.productName,
+        prompt:
+          "write a hilarious inspiration one-liner related to: " +
+          formDataObj.productName,
         temperature: 1,
         max_tokens: 100,
         top_p: 1,
@@ -47,7 +45,6 @@ class Product extends Component {
         });
       });
   };
-  
 
   render() {
     return (
@@ -56,27 +53,32 @@ class Product extends Component {
           <h1 className="bg-yellow p-2">Excuseme.life</h1>
         </a>
         <div>
-        <Link className="btn" to="/">Excuses</Link> /
-        {/* <Link className="btn" to="/inspiration">Inspiration</Link> / */} &nbsp;
-        <Link className="btn" to="/spin">Spin</Link> / &nbsp;
-        <Link className="btn" to="/horror">Horror</Link>
-
-
+          <Link className="btn" to="/">
+            Excuses
+          </Link>{" "}
+          /{/* <Link className="btn" to="/inspiration">Inspiration</Link> / */}{" "}
+          &nbsp;
+          <Link className="btn" to="/spin">
+            Spin
+          </Link>{" "}
+          / &nbsp;
+          <Link className="btn" to="/horror">
+            Horror
+          </Link>
         </div>
-      
-        <Container className="col-md-5 container">  
-        <div className="card1">
-        <container className="card2 container1">
-          <card className="card2 col-md-4">
-            
+
+        <Container className="col-md-5 container">
+          <div className="card1">
+            <container className="card2 container1">
+              <card className="card2 col-md-4">
                 <h4 className="card3">{this.state.response}</h4>
-          </card>
-        </container>
-        </div>
+              </card>
+            </container>
+          </div>
 
-          <br/>
+          <br />
           <h1>Your daily dose of Inspiration </h1>
-          <br/>                                                              
+          <br />
           <br />
           <Form onSubmit={this.onFormSubmit}>
             <Form.Group className="mb-3" controlId="formBasicEmail">
@@ -99,11 +101,9 @@ class Product extends Component {
           </Form>
           <br />
           <br />
-          
         </Container>
         <br />
         <br />
-      
       </div>
     );
   }

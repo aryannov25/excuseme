@@ -19,8 +19,8 @@
   width: 500px;
 }
 
-.h2{
-    margin-top: -10%;
+.h2 {
+  margin-top: -10%;
 }
 
 .title {
@@ -35,11 +35,10 @@
   color: white;
 }
 
-.bg-green{
-  background-color: #00CD9C;
+.bg-green {
+  background-color: #00cd9c;
   color: white;
 }
-
 
 .btn {
   text-decoration: none;
@@ -53,7 +52,6 @@
   background-color: #ffd119;
 }
 
-
 .card1 {
   background-position: center;
   background-repeat: no-repeat;
@@ -64,20 +62,20 @@
 }
 
 .cardh1 {
-margin-top: -4%;  
+  margin-top: -4%;
   height: 300px;
   background-image: url(./Quotes.png);
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
 .card1o {
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 300px;
-    background-image: url(./Green.png);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-  }
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 300px;
+  background-image: url(./Green.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
 .card2 {
   width: 60%;
   margin-left: 36%;
@@ -95,15 +93,13 @@ margin-top: -4%;
   padding-top: 15%;
 }
 
-
 .cardo3 {
-    padding: 10%;
-    padding-top: 18%;
-    margin-top: -7%;
-    height: 50%;
-  }
-  
-.input{
-  padding: 80%;
+  padding: 10%;
+  padding-top: 18%;
+  margin-top: -7%;
+  height: 50%;
+}
 
+.input {
+  padding: 80%;
 }

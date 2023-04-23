@@ -24,7 +24,7 @@ class Product extends Component {
     ///// OPENAI
 
     const configuration = new Configuration({
-      apiKey: "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",
+      apiKey: "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",
     });
     const openai = new OpenAIApi(configuration);
     openai
@@ -52,10 +52,18 @@ class Product extends Component {
           <h1 className="bg-blue p-2">Excuseme.life</h1>
         </a>
         <div>
-        <Link className="btn" to="/">Excuses</Link> /
-        {/* <Link className="btn" to="/inspiration">Inspiration</Link> / */} &nbsp;
-        <Link className="btn" to="/spin">Spin</Link> / &nbsp;
-        <Link className="btn" to="/horror">Horror</Link>
+          <Link className="btn" to="/">
+            Excuses
+          </Link>{" "}
+          /{/* <Link className="btn" to="/inspiration">Inspiration</Link> / */}{" "}
+          &nbsp;
+          <Link className="btn" to="/spin">
+            Spin
+          </Link>{" "}
+          / &nbsp;
+          <Link className="btn" to="/horror">
+            Horror
+          </Link>
         </div>
         <Container className="col-md-6 container">
           <h1> Generate Excuses </h1>
